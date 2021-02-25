@@ -1,39 +1,33 @@
 # sqlalchemy-challenge
 
-Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
+Step 1 - Climate Analysis and Exploration
+To begin, use Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
-For the primary keys check to see if the column is unique, otherwise create a composite key. Which takes to primary keys in order to uniquely identify a row.
-Be sure to create tables in the correct order to handle foreign keys.
+Use the provided starter notebook and hawaii.sqlite files to complete your climate analysis and data exploration.
+Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.
 
+# Precipitation Analysis
+Design a query to retrieve the last 12 months of precipitation data.
+Select only the date and prcp values.
+Load the query results into a Pandas DataFrame and set the index to the date column.
+Sort the DataFrame values by date.
+Plot the results using the DataFrame plot method.
+Use Pandas to print the summary statistics for the precipitation data.
 
+# Station Analysis
+Design a query to calculate the total number of stations.
+Design a query to find the most active stations.
+List the stations and observation counts in descending order.
+Which station has the highest number of observations.
 
-Import each CSV file into the corresponding SQL table. Note be sure to import the data in the same order that the tables were created and account for the headers when importing to avoid errors.
-
-
-
-Data Analysis
-Once you have a complete database, do the following:
-
-
-List the following details of each employee: employee number, last name, first name, sex, and salary.
-
-
-List first name, last name, and hire date for employees who were hired in 1986.
-
-
-List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
-
-
-List the department of each employee with the following information: employee number, last name, first name, and department name.
+Design a query to retrieve the last 12 months of temperature observation data (TOBS).
+Filter by the station with the highest number of observations.
+Plot the results as a histogram with bins=12.
 
 
-List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+# Step 2 - Climate App
+Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
 
-
-List all employees in the Sales department, including their employee number, last name, first name, and department name.
-
-
-List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
-
-
-In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+Use Flask to create your routes.
+Routes/
+Home page.
